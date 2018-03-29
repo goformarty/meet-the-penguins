@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+
+	<title>Hello penguins!</title>
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/generics.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+	</style>
+</head>
+
+<body>
+	<div id="content" role="main">
+
+		<div id="panel-container">
+
+			<header>
+				<h1>🐧 Meet the penguins! 🐧</h1>
+				<h2>Did you know you can
+					<span>pet</span> and
+					<span>feed</span>
+					<span class="penguin">penguins</span> at the London Zoo?</h2>
+			</header>
+
+			<div id="search-container">
+				<div id="penguins">
+					<img class="p-icon-sm" src="img/PenguinMarty.svg" alt="map-icon" style="display: inline-block;">
+					<img class="p-icon-lg" src="img/PenguinMarty.svg" alt="map-icon" style="display: inline-block;">
+					<img class="p-icon-sm" src="img/PenguinMarty.svg" alt="map-icon" style="display: inline-block;">
+				</div>
+				<h3>Let's plan yout trip!</h3>
+
+				<div id="location">
+					<input type="text" id="start" name="start" required="required" placeholder="Your location" />
+					<button id="find-start">📍 Grab my geolocation</button>
+				</div>
+				<button id="get-directions">Get directions</button>
+			</div>
+
+		</div>
+
+		<div id="map-container">
+
+			<div id="travel-mode">
+				<strong>Mode of Travel: </strong>
+				<select id="mode">
+					<option value="DRIVING">Driving</option>
+					<option value="WALKING">Walking</option>
+					<option value="BICYCLING">Bicycling</option>
+					<option value="TRANSIT">Transit</option>
+				</select>
+			</div>
+
+			<div id="map"></div>
+
+		</div>
+
+	</div>
+	<script src="js/map-style.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjW7hDR2nXG_KqCOQM3Y3kZYyih5w78PI&callback=initMap"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

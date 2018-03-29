@@ -1,0 +1,157 @@
+* {
+	font-weight: 300;
+}
+
+html,
+body {
+	background: #4054e1;
+	font: 16px 'Roboto', sans-serif;
+	color: white;
+}
+
+h1 {
+	font-size: 19px;
+	text-transform: uppercase;
+	color: #ffe38e;
+	text-shadow: 2px 2px 2px #00139c;
+	font-weight: 400;
+	margin-bottom: 35px;
+	letter-spacing: 1.5px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 32px;
+	margin-top: 0;
+	line-height: 1.1;
+}
+
+h3 {
+	color: black;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+span {
+	display: inline-block;
+	border-bottom: 2px solid #ff80ab;
+	transition: 1s;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+span.penguin {
+	color: #ff80ab;
+	border: none;
+	padding-bottom: 4px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 2px 2px 2px #00139c;
+}
+
+span.penguin:hover {
+	background: #ff80ab;
+	color: #fff;
+}
+
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 0;
+	letter-spacing: 1px;
+	font-weight: 300;
+	transition: .3s;
+	flex-shrink: 0;
+	outline: none;
+}
+
+button#get-directions {
+	font-size: 24px;
+	width: 100%;
+	background: #00BFA5;
+	background: #00bf9a;
+	flex-shrink: 1;
+	border-bottom: 5px solid #009688;
+}
+
+button#find-start {
+	background: #9899f8;
+	font-size: 19px;
+	border-bottom: 5px solid #8961c3;
+}
+
+button#get-directions:hover,
+button#get-directions:active,
+button#get-directions:focus {
+	background: #009688;
+	cursor: pointer;
+}
+
+button#find-start:hover,
+button#find-start:active,
+button#find-start:focus {
+	cursor: pointer;
+	background: #8861c4;
+	/* background: #ff7fab; */
+	/* box-shadow: 8px 6px #ff4081;	 */
+	box-shadow: none;
+}
+
+
+
+input {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-progress-appearance: none;
+	border: none;
+	border-left: 5px solid #8861c4;
+	border-radius: 0 !important;
+	background: #efefef;
+	padding: 10px;
+	border-radius: 4px;
+	transition: .4s;
+	font-size: 19px;
+}
+
+input:active,
+input:focus {
+	background: #e3e3ff;
+	border-left: 5px solid #9799f8;
+	outline: none;
+}
+
+#penguins {
+	display: flex;
+	align-items: center;
+}
+
+#penguins img {
+	align-self: flex-end;
+}
+
+.p-icon-sm {
+	height: 85px;
+	width: 68px;
+}
+
+.p-icon-lg {
+	height: 120px;
+	width: 87px;
+}
+
+#travel-mode {
+	background: #9899f8;
+	font-size: 19px;
+	border: 10px solid #9799f8;
+}
+
+#mode {
+	margin-left: 15px;
+}

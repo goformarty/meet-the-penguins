@@ -6,7 +6,6 @@ html,
 body {
 	background: #4054e1;
 	font: 16px 'Roboto', sans-serif;
-	color: white;
 }
 
 h1 {
@@ -22,6 +21,7 @@ h1 {
 h2 {
 	font-weight: 300;
 	font-size: 32px;
+	color: white;
 	margin-top: 0;
 	line-height: 1.1;
 }
@@ -29,9 +29,15 @@ h2 {
 h3 {
 	color: black;
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 0;
 	font-size: 32px;
 	font-weight: 400;
+}
+
+p {
+	font-size: 19px;
+	margin-top: 0;
+	margin-bottom: 35px;
 }
 
 span {
@@ -57,22 +63,25 @@ span.penguin:hover {
 }
 
 button {
+	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	-ms-progress-appearance: none;
 	border: none;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 0;
 	letter-spacing: 1px;
-	font-weight: 300;
+	font-weight: 400;
 	transition: .3s;
 	flex-shrink: 0;
 	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 button#get-directions {
-	font-size: 24px;
+	font-size: 19px;
 	width: 100%;
 	background: #00BFA5;
 	background: #00bf9a;
@@ -82,7 +91,8 @@ button#get-directions {
 
 button#find-start {
 	background: #9899f8;
-	font-size: 19px;
+	font-size: 17px;
+	letter-spacing: 1.3px;
 	border-bottom: 5px solid #8961c3;
 }
 
@@ -154,4 +164,11 @@ input:focus {
 
 #mode {
 	margin-left: 15px;
+}
+
+strong {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-size: 17px;
 }

@@ -25,8 +25,8 @@ body {
 	flex-direction: column;
 	flex-shrink: 0;
 	width: 100%;
-	max-width: 56.25rem;
-	padding: 65px 30px 45px;
+	max-width: 950px;
+	padding: 55px 30px 60px;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
 	background: white;
 	margin: 1.25rem 0;
 	/* 20/16 */
-	padding: 30px 50px 40px;
+	padding: 30px 70px 40px;
 	/* 30/16 */
 	border-radius: 1.25rem;
 	/* 20/16 */
@@ -63,6 +63,10 @@ header {
 input {
 	flex: 1;
 	margin-bottom: 10px;	
+}
+
+#find-start {
+	flex: 1;
 }
 
 button {
@@ -94,7 +98,7 @@ button {
 @media (min-width: 700px) {
 	#location {
 		flex-direction: row;
-		margin-bottom: 10px;
+		margin-bottom: 25px;
 	}
 	input {
 		margin-right: 15px;

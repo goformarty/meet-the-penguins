@@ -126,7 +126,7 @@ var stylesArray = [{
 		"featureType": "water",
 		"elementType": "geometry.fill",
 		"stylers": [{
-			"color": "#4054e1"
+			"color": "#9999f8"
 		}]
 	},
 	{

@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://goformarty.github.io/meet-the-penguins/)
 
-![App screenshot](https://user-images.githubusercontent.com/14976588/29963895-44810012-8f00-11e7-853d-09a83ad901c4.png "App screenshot")
+![App screenshot](https://github.com/goformarty/meet-the-penguins/blob/master/screenshot-1.png?raw=true "App screenshot")
 
 ## Demo
 You can test a fully working live demo at file:///Users/martyna.stepien/Documents/Workspaces/myProjects/meet-the-penguins/index.html.

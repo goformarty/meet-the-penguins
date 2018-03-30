@@ -5,7 +5,7 @@
 ![App screenshot](https://github.com/goformarty/meet-the-penguins/blob/master/screenshot-1.png?raw=true "App screenshot")
 
 ## Demo
-You can test a fully working live demo at file:///Users/martyna.stepien/Documents/Workspaces/myProjects/meet-the-penguins/index.html.
+You can test a fully working live demo at https://goformarty.github.io/meet-the-penguins/.
 
 ---
 

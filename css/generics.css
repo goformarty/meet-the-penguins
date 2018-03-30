@@ -18,9 +18,14 @@ body {
 	background: grey;
 }
 
+#map {
+	border-bottom: 10px solid #9899f8;
+}
+
 h1 {
 	color: #ffe38e;
-	font-size: 19px;
+	font-size: 1.188rem;
+	/* 19/16 */
 	font-weight: 400;
 	letter-spacing: 1.5px;
 	text-shadow: 2px 2px 2px #00139c;
@@ -30,18 +35,21 @@ h1 {
 h2 {
 	color: white;
 	font-weight: 300;
-	font-size: 32px;
+	font-size: 2rem;
+	/* 32/16 */
 	line-height: 1.1;
 }
 
 h3 {
 	color: black;
-	font-size: 32px;
+	font-size: 2rem;
+	/* 32/16 */
 	font-weight: 400;
 }
 
 p {
-	font-size: 19px;
+	font-size: 1.188rem;
+	/* 19/16 */
 }
 
 span {
@@ -78,7 +86,9 @@ button {
 	font-weight: 400;
 	letter-spacing: 2px;
 	outline: none;
-	padding: 10px 20px;
+	padding: 0.625rem 1.25rem;
+	/* 10/16 20/16 */
+
 	text-transform: uppercase;
 	transition: .3s;
 }
@@ -86,14 +96,16 @@ button {
 button#get-directions {
 	background: #00bf9a;
 	border-bottom: 5px solid #009688;
-	font-size: 19px;
+	font-size: 1.188rem;
+	/* 19/16 */
 	width: 100%;
 }
 
 button#find-start {
 	background: #9899f8;
 	border-bottom: 5px solid #8961c3;
-	font-size: 17px;
+	font-size: 1.063rem;
+	 /* 17/16 */
 	letter-spacing: 1.3px;
 }
 
@@ -120,8 +132,10 @@ input {
 	border: none;
 	border-radius: 0;
 	border-left: 5px solid #8861c4;
-	font-size: 19px;
-	padding: 10px;
+	font-size: 1.188rem;
+	/* 19/16 */
+	padding: 0.625rem;
+	/* 10/16 */
 	transition: .4s;
 }
 
@@ -134,19 +148,22 @@ input:focus {
 
 #travel-mode {
 	background: #9899f8;
-	font-size: 19px;
+	font-size: 1.188rem;
+	/* 19/16 */
 	border: 10px solid #9799f8;
 }
 
 #mode {
-	margin-left: 15px;
+	margin-left: 1rem;
+	/* 16/16 */
 }
 
 strong {
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	font-size: 17px;
+	font-size: 1.063rem;
+	/* 17/16 */
 }
 
 .line-h {

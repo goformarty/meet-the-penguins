@@ -54,6 +54,7 @@ function initMap() {
 		}
 		console.log('Find directions to the zoo');
 		marker.setMap(null);
+		document.getElementById('get-directions').scrollIntoView();
 		displayDirections();
 	}
 

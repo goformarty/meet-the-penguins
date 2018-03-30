@@ -23,6 +23,8 @@ function initMap() {
 		infowindow.open(map, marker);
 	});
 
+	var input = document.getElementById('start');
+	var autocomplete = new google.maps.places.Autocomplete(input);
 
 	var directionsService = new google.maps.DirectionsService();
 	var directionsDisplay = new google.maps.DirectionsRenderer();

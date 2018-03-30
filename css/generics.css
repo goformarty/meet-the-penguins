@@ -8,6 +8,16 @@ body {
 	font: 16px 'Roboto', sans-serif;
 }
 
+#search-container {
+	background: white;
+	border-radius: 1.25rem;
+	/* 20/16 */
+}
+
+#map-container {
+	background: grey;
+}
+
 h1 {
 	color: #ffe38e;
 	font-size: 19px;
@@ -122,25 +132,6 @@ input:focus {
 	outline: none;
 }
 
-#penguins {
-	display: flex;
-	align-items: center;
-}
-
-#penguins img {
-	align-self: flex-end;
-}
-
-.p-icon-sm {
-	height: 85px;
-	width: 68px;
-}
-
-.p-icon-lg {
-	height: 120px;
-	width: 87px;
-}
-
 #travel-mode {
 	background: #9899f8;
 	font-size: 19px;
@@ -159,7 +150,7 @@ strong {
 }
 
 .line-h {
-	background: #009587;
+	background: #00bf9a;
 	transform: rotate(15deg);
 	width: 4px;
 }

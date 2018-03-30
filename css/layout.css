@@ -125,5 +125,6 @@ input {
 	}
 	.line-h {
 		display: block;
+		margin: -10px 20px;
 	}
 }

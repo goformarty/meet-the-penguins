@@ -110,15 +110,13 @@ button#find-start {
 }
 
 button#get-directions:hover,
-button#get-directions:active,
-button#get-directions:focus {
+button#get-directions:active {
 	background: #009688;
 	cursor: pointer;
 }
 
 button#find-start:hover,
-button#find-start:active,
-button#find-start:focus {
+button#find-start:active {
 	background: #8861c4;
 	cursor: pointer;
 }

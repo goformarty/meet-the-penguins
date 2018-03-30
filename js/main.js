@@ -18,6 +18,7 @@ function initMap() {
 		title: 'London zoo',
 		icon: 'img/PenguinMartyPin.svg'
 	});
+	marker.setMap(map);
 	marker.addListener('click', function () {
 		infowindow.open(map, marker);
 	});
@@ -33,6 +34,7 @@ function initMap() {
 			window.alert('You need to specify the start!');
 			return;
 		}
+		marker.setMap(null);
 		calcRoute(directionsService, directionsDisplay, zoo);
 	};
 

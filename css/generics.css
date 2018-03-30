@@ -9,43 +9,37 @@ body {
 }
 
 h1 {
-	font-size: 19px;
-	text-transform: uppercase;
 	color: #ffe38e;
-	text-shadow: 2px 2px 2px #00139c;
+	font-size: 19px;
 	font-weight: 400;
-	margin-bottom: 35px;
 	letter-spacing: 1.5px;
+	text-shadow: 2px 2px 2px #00139c;
+	text-transform: uppercase;
 }
 
 h2 {
+	color: white;
 	font-weight: 300;
 	font-size: 32px;
-	color: white;
-	margin-top: 0;
 	line-height: 1.1;
 }
 
 h3 {
 	color: black;
-	margin-top: 10px;
-	margin-bottom: 0;
 	font-size: 32px;
 	font-weight: 400;
 }
 
 p {
 	font-size: 19px;
-	margin-top: 0;
-	margin-bottom: 35px;
 }
 
 span {
-	display: inline-block;
 	border-bottom: 2px solid #ff80ab;
-	transition: 1s;
+	display: inline-block;
 	padding-left: 2px;
 	padding-right: 2px;
+	transition: 1s;
 }
 
 span.penguin {
@@ -68,32 +62,30 @@ button {
 	-moz-appearance: none;
 	-ms-progress-appearance: none;
 	border: none;
-	color: #fff;
-	padding: 10px 20px;
 	border-radius: 0;
-	letter-spacing: 1px;
-	font-weight: 400;
-	transition: .3s;
+	color: #fff;
 	flex-shrink: 0;
-	outline: none;
-	text-transform: uppercase;
+	font-weight: 400;
 	letter-spacing: 2px;
+	outline: none;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	transition: .3s;
 }
 
 button#get-directions {
+	background: #00bf9a;
+	border-bottom: 5px solid #009688;
+	flex-shrink: 1;
 	font-size: 19px;
 	width: 100%;
-	background: #00BFA5;
-	background: #00bf9a;
-	flex-shrink: 1;
-	border-bottom: 5px solid #009688;
 }
 
 button#find-start {
 	background: #9899f8;
+	border-bottom: 5px solid #8961c3;
 	font-size: 17px;
 	letter-spacing: 1.3px;
-	border-bottom: 5px solid #8961c3;
 }
 
 button#get-directions:hover,
@@ -112,8 +104,6 @@ button#find-start:focus {
 	/* box-shadow: 8px 6px #ff4081;	 */
 	box-shadow: none;
 }
-
-
 
 input {
 	appearance: none;
@@ -171,4 +161,11 @@ strong {
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	font-size: 17px;
+}
+
+.line-h {
+	width: 4px;
+	background: #009587;
+	margin: -10px 20px;
+	transform: rotate(15deg);
 }

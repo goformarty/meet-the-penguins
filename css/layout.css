@@ -35,6 +35,14 @@ header {
 	/* 500/16 */
 }
 
+h1 {
+	margin-bottom: 35px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
 #search-container {
 	display: flex;
 	align-items: center;
@@ -42,7 +50,7 @@ header {
 	background: white;
 	margin: 1.25rem 0;
 	/* 20/16 */
-	padding: 30px 70px 40px;
+	padding: 25px 70px 40px;
 	/* 30/16 */
 	border-radius: 1.25rem;
 	/* 20/16 */
@@ -51,6 +59,16 @@ header {
 #penguins {
 	display: flex;
 	align-items: center;
+}
+
+h3 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 35px;
 }
 
 #location {
@@ -68,11 +86,6 @@ input {
 #find-start {
 	flex: 1;
 }
-
-button {
-	margin-right: 8px; 
-}
-
 
 #directions {
 	display: flex;
@@ -95,16 +108,22 @@ button {
 	width: 100%;
 }
 
+.line-h {
+	display: none;
+}
+
 @media (min-width: 700px) {
 	#location {
 		flex-direction: row;
 		margin-bottom: 25px;
 	}
 	input {
-		margin-right: 15px;
 		margin-bottom: 0;
 	}
 	button {
 		margin-right: 0;
+	}
+	.line-h {
+		display: block;
 	}
 }

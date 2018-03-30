@@ -13,11 +13,12 @@ function initMap() {
 
 	// Add custom penguin marker pin in London Zoo
 	var pinPenguin = {
-		url: 'img/PenguinMartyPin.svg',
-		scaledSize: new google.maps.Size(48, 100)
+		url: 'img/penguin-pin.svg',
+		scaledSize: new google.maps.Size(36, 75)
 	};
 	var pinUser = {
-		url: 'img/here.png',
+		url: 'img/user-pin.png',
+		scaledSize: new google.maps.Size(36, 75) 
 	}
 	var infowindow = new google.maps.InfoWindow({
 		content: '<p style="font-size: 16px; margin-bottom: 0; padding: 10px 0 5px">Sqawk!</p>'
@@ -26,7 +27,7 @@ function initMap() {
 		position: zoo,
 		map: map,
 		title: 'London zoo',
-		icon: pinPenguin
+		icon: pinPenguin, 
 	});
 	marker.setMap(map);
 	marker.addListener('click', function () {

@@ -25,18 +25,20 @@ body {
 	flex-direction: column;
 	flex-shrink: 0;
 	max-width: 950px;
-	padding: 55px 30px 60px;
+	padding: 3.438rem 1.875rem 3.75rem;
+	/* 55/16 30p/16 60/16 */
 	width: 100%;
 }
 
 header {
 	margin: 0 auto;
-	max-width: 550px;
-	/* 500/16 */
+	max-width: 34.38rem
+	/* 550/16 */
 }
 
 h1 {
-	margin-bottom: 35px;
+	margin-bottom: 2.188rem;
+	/* 35/16 */
 }
 
 h2 {
@@ -49,8 +51,8 @@ h2 {
 	flex-direction: column;
 	margin: 1.25rem 0;
 	/* 20/16 */
-	padding: 25px 25px 40px;
-	/* 30/16 */
+	padding: 1.563rem 1.563rem 1.563rem;
+	/* 25/16 25/16 40/16; */
 }
 
 #penguins {
@@ -73,25 +75,29 @@ h2 {
 }
 
 h3 {
-	margin-top: 10px;
+	margin-top: 0.625rem;
+	/* 10/16 */
 	margin-bottom: 0;
 }
 
 p {
 	margin-top: 0;
-	margin-bottom: 35px;
+	margin-bottom: 2.188rem;
+	/* 35/16 */
 }
 
 #location {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 30px;
+	margin-bottom: 1.875rem;
+	/* 30/16 */
 	width: 100%;
 }
 
 input {
 	flex: 1;
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
+	/* 10/16 */
 }
 
 #find-start {
@@ -110,7 +116,8 @@ input {
 
 #map {
 	height: 100%;
-	min-height: 500px;
+	min-height: 31.25rem;
+	/* 500/16 */
 	width: 100%;
 }
 
@@ -124,14 +131,16 @@ input {
 
 @media (min-width: 550px) {
 	#search-container {
-		padding: 25px 70px 40px;
+		padding: 1.563rem 4.375rem 2.5rem;
+		/* 25/16 70/16 40/16 */
 	}
 }
 
 @media (min-width: 750px) {
 	#location {
 		flex-direction: row;
-		margin-bottom: 25px;
+		margin-bottom: 1.563rem;
+		/* 25/16 */
 	}
 	input {
 		margin-bottom: 0;
@@ -141,6 +150,7 @@ input {
 	}
 	.line-h {
 		display: block;
-		margin: -10px 20px;
+		margin: -0.625rem 1.25rem;
+		/* -10/16 20/16 */
 	}
 }

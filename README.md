@@ -1,9 +1,9 @@
 # Meet the penguins!
 
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://goformarty.github.io/meet-the-penguins/)
+
 Did you know you can pet and feed penguins in the London Zoo?
 This interactive web application created with Google Maps API will find you directions from your geolocation to Penguin Pool at the London Zoo.
-
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://goformarty.github.io/meet-the-penguins/)
 
 ![App screenshot](https://github.com/goformarty/meet-the-penguins/blob/master/screenshot-1.png?raw=true "App screenshot")
 
@@ -27,12 +27,12 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
 #### Finding user's location
 
     As a user
-    I want app to find my geolocation for me
-    so that the app will set there my start location
+    I want the app to find my geolocation for me
+    so that it will know my journey's start point
 
     As a user
     I want to be able to enter my location
-    so that I can choose where my journey starts
+    so that I can choose freely where my journey starts
 
     As a user
     I want to see location suggestions
@@ -54,22 +54,25 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
     I want to zoom in and zoom out the map
     so that I can see more details about my journey
 
-#### Using different devices and accessibility
+#### Responsive design and accessibility
 
     As a user
-    I want app to be responsive
-    so that I can use it on different devices
+    I want app to be fully responsive
+    so that I can use it on phone, tablet and mobile
 
     As a user
     I want app to be accessible
-    so that I can use it only with keyboard or screen reader
+    so that I can navigate easily with keyboard or screen reader only
 
+    As a user
+    I want to be able to specify my location
+    so that I can use app when I don't have geolocation
 
 ## What can be added/improved:
 
-- unit and browser tests;
-- option for choosing time and date for the journey;
-- "get directions" button disabled until location entered;
-- clearer user journey - users may feel confused with 2 options to find their location;
+[ ] unit and browser tests;
+[ ] option for choosing time and date for the journey;
+[ ] "get directions" button disabled until location entered;
+[ ] clearer user journey - users may feel confused with 2 options to set their start location;
 
 ---

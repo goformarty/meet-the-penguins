@@ -60,7 +60,7 @@ function createMap() {
 			position: mapCenter,
 			map: map,
 			title: 'London zoo',
-			icon: markerIcons.end,
+			icon: markerIcons.end
 		});
 		markers.push(marker);
 		marker.setMap(map);
@@ -92,24 +92,24 @@ function createMap() {
 		}
 
 		navigator.geolocation.getCurrentPosition(function (position) {
-				var geocoder = new google.maps.Geocoder();
-				geocoder.geocode({
-						'location': new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
-					},
-					function (results, status) {
-						if (status === google.maps.GeocoderStatus.OK) {
-							document.getElementById('start').value = results[0].formatted_address;
-						} else {
-							window.alert('Unable to find your location');
-						}
-					});
-			},
-			function (positionError) {
-				console.log('Error: ' + positionError.message);
-			}, {
-				enableHighAccuracy: true,
-				timeout: 20 * 1000 // 20 seconds
-			});
+			var geocoder = new google.maps.Geocoder();
+			geocoder.geocode({
+					'location': new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+				},
+				function (results, status) {
+					if (status === google.maps.GeocoderStatus.OK) {
+						document.getElementById('start').value = results[0].formatted_address;
+					} else {
+						window.alert('Unable to find your location');
+					}
+				});
+		},
+		function (positionError) {
+			console.log('Error: ' + positionError.message);
+		}, {
+			enableHighAccuracy: true,
+			timeout: 20 * 1000 // 20 seconds
+		});
 	}
 
 	function findRoute() {
@@ -152,22 +152,8 @@ function createMap() {
 		directionsService.route(request, function (response, status) {
 			if (status == 'OK') {
 				directionsDisplay.setDirections(response);
-				// remove existing pins
 				removeExistingMarkers();
-
-				// replace deafalut pins 
-				var _route = response.routes[0].legs[0];
-				var pinA = new google.maps.Marker({
-					position: _route.start_location,
-					map: map,
-					icon: markerIcons.start
-				});
-				var pinB = new google.maps.Marker({
-					position: _route.end_location,
-					map: map,
-					icon: markerIcons.end
-				});
-				markers.push(pinA, pinB);
+				replaceDefaultMarkers(response);
 			} else {
 				window.alert('Directions request failed due to ' + status);
 			}
@@ -180,5 +166,19 @@ function createMap() {
 				markers[i].setMap(null);
 			}
 		}
+	}
+	function replaceDefaultMarkers(response) {
+		var _route = response.routes[0].legs[0];
+		var pinA = new google.maps.Marker({
+			position: _route.start_location,
+			map: map,
+			icon: markerIcons.start
+		});
+		var pinB = new google.maps.Marker({
+			position: _route.end_location,
+			map: map,
+			icon: markerIcons.end
+		});
+		markers.push(pinA, pinB);
 	}
 }

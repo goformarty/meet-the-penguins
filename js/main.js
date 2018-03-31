@@ -1,3 +1,5 @@
+var markers = [];
+
 function initMap() {
 	console.log('Init map at London zoo');
 
@@ -18,8 +20,8 @@ function initMap() {
 	};
 	var pinUser = {
 		url: 'img/user-pin.png',
-		scaledSize: new google.maps.Size(36, 75) 
-	}
+		scaledSize: new google.maps.Size(36, 75)
+	};
 	var infowindow = new google.maps.InfoWindow({
 		content: '<p style="font-size: 16px; margin-bottom: 0; padding: 10px 0 5px">Sqawk!</p>'
 	});
@@ -27,8 +29,9 @@ function initMap() {
 		position: zoo,
 		map: map,
 		title: 'London zoo',
-		icon: pinPenguin, 
+		icon: pinPenguin,
 	});
+	markers.push(marker);
 	marker.setMap(map);
 	marker.addListener('click', function () {
 		infowindow.open(map, marker);
@@ -40,7 +43,9 @@ function initMap() {
 
 	// Find directions to the zoo - Google Maps Directions API
 	var directionsService = new google.maps.DirectionsService();
-	var directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true});
+	var directionsDisplay = new google.maps.DirectionsRenderer({
+		suppressMarkers: true
+	});
 	directionsDisplay.setMap(map);
 
 	document.getElementById('find-start').addEventListener('click', findStart);
@@ -54,7 +59,10 @@ function initMap() {
 			return;
 		}
 		console.log('Find directions to the zoo');
-		marker.setMap(null);
+
+
+		removeExistingMarkers();
+
 		document.getElementById('get-directions').scrollIntoView();
 		displayDirections();
 	}
@@ -65,7 +73,7 @@ function initMap() {
 			return;
 		}
 		console.log('Update travel mode');
-		marker.setMap(null);
+		removeExistingMarkers();
 		displayDirections();
 	}
 
@@ -86,8 +94,11 @@ function calcRoute(directionsService, directionsDisplay, map, end, markerA, mark
 	directionsService.route(request, function (response, status) {
 		if (status == 'OK') {
 			directionsDisplay.setDirections(response);
+			// remove existing pins
+			removeExistingMarkers();
+
 			// replace deafalut pins 
-			var _route = response.routes[0].legs[0]; 
+			var _route = response.routes[0].legs[0];
 			var pinA = new google.maps.Marker({
 				position: _route.start_location,
 				map: map,
@@ -98,6 +109,7 @@ function calcRoute(directionsService, directionsDisplay, map, end, markerA, mark
 				map: map,
 				icon: markerB
 			});
+			markers.push(pinA, pinB);
 		} else {
 			window.alert('Directions request failed due to ' + status);
 		}
@@ -114,22 +126,30 @@ function findStart() {
 	}
 
 	navigator.geolocation.getCurrentPosition(function (position) {
-		var geocoder = new google.maps.Geocoder();
-		geocoder.geocode({
-				'location': new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
-			},
-			function (results, status) {
-				if (status === google.maps.GeocoderStatus.OK) {
-					document.getElementById('start').value = results[0].formatted_address;
-				} else {
-					window.alert('Unable to find your location');
-				}
-			});
-	},
-	function (positionError) {
-		console.log('Error: ' + positionError.message);
-	}, {
-		enableHighAccuracy: true,
-		timeout: 20 * 1000 // 20 seconds
-	});
+			var geocoder = new google.maps.Geocoder();
+			geocoder.geocode({
+					'location': new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+				},
+				function (results, status) {
+					if (status === google.maps.GeocoderStatus.OK) {
+						document.getElementById('start').value = results[0].formatted_address;
+					} else {
+						window.alert('Unable to find your location');
+					}
+				});
+		},
+		function (positionError) {
+			console.log('Error: ' + positionError.message);
+		}, {
+			enableHighAccuracy: true,
+			timeout: 20 * 1000 // 20 seconds
+		});
+}
+
+function removeExistingMarkers() {
+	if (markers.length > 0) {
+		for (var i = 0; i < markers.length; i++) {
+			markers[i].setMap(null);
+		}
+	}
 }

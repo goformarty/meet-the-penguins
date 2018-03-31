@@ -1,6 +1,7 @@
 # Meet the penguins!
 
-Interactive web application created with Google Maps API that allows user to find directions to the London Zoo.
+Did you know you can pet and feed penguins in the London Zoo?
+This interactive web application created with Google Maps API will find you directions from you geolocation to Penguin Pool at the London Zoo.
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://goformarty.github.io/meet-the-penguins/)
 

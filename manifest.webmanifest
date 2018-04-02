@@ -18,13 +18,18 @@
 			"src": "img/penguin-icon-4x.png",
 			"type": "image/png",
 			"sizes": "192x192"
+		},
+		{
+			"src": "img/penguin-splashscreen.png",
+			"type": "image/png",
+			"sizes": "573x793"
 		}
 	],
 	"start_url": "index.html",
 	"theme_color": "#4054e1",
 	"background_color": "#4054e1",
 	"serviceworker": {
-		"src": "service-worker.js",
-		"update_via_cache": "none"
-	}
+		"src": "service-worker.js"
+	},
+	"display": "fullscreen"
 }

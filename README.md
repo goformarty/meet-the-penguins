@@ -86,6 +86,6 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
 - [Google Places API Web Service](https://developers.google.com/maps/documentation/javascript/places);
 - [ Google Maps Autocomplete for Addresses](https://developers.google.com/maps/documentation/javascript/places-autocomplete);
 - [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers);
+- [Google Maps Styling Wizard](https://mapstyle.withgoogle.com/);
 - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html);
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html "Google JavaScript Style Guide");
-- [Google Maps Styling Wizard](https://mapstyle.withgoogle.com/);

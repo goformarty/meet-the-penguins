@@ -4,16 +4,15 @@
 		console.log('Service worker not supported');
 		return;
 	}
-	navigator.serviceWorker.register('service-worker.js', {
-			scope: 'below/'
-		})
+	navigator.serviceWorker.register('service-worker.js')
 		.then(function (registration) {
-			console.log('Registered at scope:', registration.scope);
+			console.log('Registered:', registration);
 		})
 		.catch(function (error) {
-			console.log('Registration failed:', error);
+			console.log('Registration failed: ', error);
 		});
 })();
+
 
 function createMap() {
 	var map, zoo, directionsService, directionsDisplay;

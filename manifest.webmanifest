@@ -25,7 +25,7 @@
 			"sizes": "512x512"
 		}
 	],
-	"start_url": "index.html",
+	"start_url": ".",
 	"theme_color": "#4054e1",
 	"background_color": "#4054e1",
 	"serviceworker": {

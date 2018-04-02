@@ -10,10 +10,8 @@
 		console.log('Service worker activating...');
 	});
 
-	// I'm a new service worker
-
 	self.addEventListener('fetch', function (event) {
-		console.log('Fetching:', event.request.url);
+		// console.log('Fetching:', event.request.url);
 	});
 
 })();

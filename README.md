@@ -7,12 +7,22 @@ This interactive web application created with Google Maps API will find for you 
 
 ![App screenshot](https://github.com/goformarty/meet-the-penguins/blob/master/screenshot-1.png?raw=true "App screenshot")
 
-## Demo
+## Instructions
+### Live demo
 You can test a fully working live demo at https://goformarty.github.io/meet-the-penguins/.
+
+### Running locally
+To run this app locally **clone or download this repository**.
+
+To **clone** navigate in your terminal to the location you want this repository to be located and run the command git clone:
+
+    $ git clone https://github.com/goformarty/meet-the-penguins.git
+
+And open **index.html** file in your favourite browser.
 
 ---
 
-# Technology:
+## Technology:
 - **Google Maps API**;
 - **Google Maps Directions API**;
 - **Google Places API Web Service**;

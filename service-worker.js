@@ -29,6 +29,16 @@
 
 	self.addEventListener('fetch', function (event) {
 		console.log('Fetching:', event.request.url);
+		// ignore anything other than GET requests
+		var request = event.request;
+		if (request.method !== 'GET') {
+			return;
+		}
+		if (request.url.indexOf(myAPIUrl) !== -1) {
+			return;
+		}
+
+		// handle other requests
 		event.respondWith(
 			caches.match(event.request)
 			.then(function (response) {

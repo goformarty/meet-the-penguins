@@ -15,6 +15,7 @@
 
 
 function createMap() {
+	'use strict';
 	var map, zoo, directionsService, directionsDisplay;
 	var markers = [];
 	var markerIcons = [];
@@ -85,12 +86,10 @@ function createMap() {
 	}
 
 	function addLocationAutocomplete(element) {
-		// Allow address autocomplete for user input - Google Places API Web Service
 		var autocomplete = new google.maps.places.Autocomplete(element);
 	}
 
 	function initDirectionsService(map) {
-		// Find directions to the zoo - Google Maps Directions API
 		directionsService = new google.maps.DirectionsService();
 		directionsDisplay = new google.maps.DirectionsRenderer({
 			suppressMarkers: true

@@ -3,22 +3,32 @@
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://goformarty.github.io/meet-the-penguins/)
 
 Did you know you can pet and feed penguins in the London Zoo?
-This interactive web application created with Google Maps API will find you directions from your geolocation to Penguin Pool at the London Zoo.
+This interactive web application created with Google Maps API will find for you directions from your geolocation to the Penguin Pool at the London Zoo.
 
 ![App screenshot](https://github.com/goformarty/meet-the-penguins/blob/master/screenshot-1.png?raw=true "App screenshot")
 
-## Demo
+## Instructions
+### Live demo
 You can test a fully working live demo at https://goformarty.github.io/meet-the-penguins/.
+
+### Running locally
+To run this app locally **clone or download this repository**.
+
+To **clone** navigate in your terminal to the location you want this repository to be located and run the command git clone:
+
+    $ git clone https://github.com/goformarty/meet-the-penguins.git
+
+And open **index.html** file in your favourite browser.
 
 ---
 
-# Technology:
-- **Google Maps API** 
-- **Google Maps Directions API**
-- **Google Places API Web Service**
-- JavaScript
-- CSS
-- HTML
+## Technology:
+- **Google Maps API**;
+- **Google Maps Directions API**;
+- **Google Places API Web Service**;
+- JavaScript;
+- CSS;
+- HTML;
 
 ---
 
@@ -67,6 +77,8 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
     As a user
     I want to be able to specify my location
     so that I can use app when I don't have geolocation
+
+## What could be improved/added:
 
 - unit and browser tests;
 - register service worker and web app manifest;

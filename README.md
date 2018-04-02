@@ -70,9 +70,22 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
 
 ## What can be added/improved:
 
-[ ] unit and browser tests;
-[ ] option for choosing time and date for the journey;
-[ ] "get directions" button disabled until location entered;
-[ ] clearer user journey - users may feel confused with 2 options to set their start location;
+- unit and browser tests;
+- register service worker and web app manifest;
+- app to respond with a 200 when offline;
+- option for choosing time and date for the journey;
+- "get directions" button disabled until location entered;
+- clearer user journey - users may feel confused with 2 options to set their start location;
 
 ---
+
+## Resources used:
+
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial);
+- [Google Directions Service](https://developers.google.com/maps/documentation/javascript/places);
+- [Google Places API Web Service](https://developers.google.com/maps/documentation/javascript/places);
+- [ Google Maps Autocomplete for Addresses](https://developers.google.com/maps/documentation/javascript/places-autocomplete);
+- [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers);
+- [Google Maps Styling Wizard](https://mapstyle.withgoogle.com/);
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html);
+- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html "Google JavaScript Style Guide");

@@ -109,14 +109,16 @@ button#find-start {
 	letter-spacing: 1.3px;
 }
 
-button#get-directions:hover,
-button#get-directions:active {
+button#get-directions:active, 
+button#get-directions:focus,
+button#get-directions:hover {
 	background: #009688;
 	cursor: pointer;
 }
 
-button#find-start:hover,
-button#find-start:active {
+button#find-start:active, 
+button#find-start:focus,
+button#find-start:hover {
 	background: #8861c4;
 	cursor: pointer;
 }
@@ -142,6 +144,10 @@ input:focus {
 	background: #e3e3ff;
 	border-left: 5px solid #9799f8;
 	outline: none;
+}
+
+#location {
+	border-bottom: 3.5px dashed #a9a9a9;
 }
 
 #travel-mode {

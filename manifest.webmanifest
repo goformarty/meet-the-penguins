@@ -20,9 +20,9 @@
 			"sizes": "192x192"
 		},
 		{
-			"src": "img/penguin-splashscreen.png",
+			"src": "img/penguin-icon-splash.png",
 			"type": "image/png",
-			"sizes": "573x793"
+			"sizes": "512x512"
 		}
 	],
 	"start_url": "index.html",

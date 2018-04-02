@@ -89,8 +89,10 @@ p {
 #location {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 1.875rem;
-	/* 30/16 */
+	padding-bottom: 1.25rem;
+	/* 20/16 */
+	margin-bottom: 1.25rem;
+	/* 20/16 */
 	width: 100%;
 }
 
@@ -139,7 +141,7 @@ input {
 @media (min-width: 750px) {
 	#location {
 		flex-direction: row;
-		margin-bottom: 1.563rem;
+		padding-bottom: 1.563rem;
 		/* 25/16 */
 	}
 	input {

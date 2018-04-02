@@ -81,11 +81,11 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
 
 ## Resources used:
 
-- [Google Maps JavaScript API guide](https://developers.google.com/maps/documentation/javascript/tutorial "Google Maps JavaScript API guide");
-- [Google Directions Service] (https://developers.google.com/maps/documentation/javascript/places "Google Directions Service guide");
-- [Google Places API Web Service](https://developers.google.com/maps/documentation/javascript/places "Google Places guide");
-- [ Google Maps Autocomplete for Addresses] (https://developers.google.com/maps/documentation/javascript/places-autocomplete "Google Maps Autocomplete guide");
-- [Google Maps Markers] (https://developers.google.com/maps/documentation/javascript/markers "Google Maps Markers guide");
-- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html "Google HTML/CSS Style Guide");
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial);
+- [Google Directions Service](https://developers.google.com/maps/documentation/javascript/places);
+- [Google Places API Web Service](https://developers.google.com/maps/documentation/javascript/places);
+- [ Google Maps Autocomplete for Addresses](https://developers.google.com/maps/documentation/javascript/places-autocomplete);
+- [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers);
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html);
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html "Google JavaScript Style Guide");
-- [Google Maps Styling Wizard] (https://mapstyle.withgoogle.com/ "Google Maps Styling Wizard");
+- [Google Maps Styling Wizard](https://mapstyle.withgoogle.com/);

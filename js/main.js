@@ -1,23 +1,39 @@
-function createMap() {
+(function () {
+	'use strict';
+	if (!('serviceWorker' in navigator)) {
+		console.log('Service worker not supported');
+		return;
+	}
+	navigator.serviceWorker.register('service-worker.js', {
+			scope: 'below/'
+		})
+		.then(function (registration) {
+			console.log('Registered at scope:', registration.scope);
+		})
+		.catch(function (error) {
+			console.log('Registration failed:', error);
+		});
+})();
 
+function createMap() {
 	var map, zoo, directionsService, directionsDisplay;
 	var markers = [];
 	var markerIcons = [];
 	var input = document.getElementById('start');
 
 	console.log('Create map centred in London Zoo');
-	
+
 	createStartEndIcons('img/user-pin.png', 'img/penguin-pin.svg');
 	setZooPosition(51.535311, -0.153296);
 	createMap(zoo);
 	addLocationAutocomplete(input);
 	initDirectionsService(map);
 	allowUserInteraction();
-	
-	function allowUserInteraction(){
+
+	function allowUserInteraction() {
 		document.getElementById('find-start').addEventListener('click', findUserLocation);
 		document.getElementById('get-directions').addEventListener('click', findRoute);
-		document.getElementById('mode').addEventListener('change', updateTravelMode); 
+		document.getElementById('mode').addEventListener('change', updateTravelMode);
 	}
 
 	function createStartEndIcons(iconStart, iconEnd) {
@@ -92,24 +108,24 @@ function createMap() {
 		}
 
 		navigator.geolocation.getCurrentPosition(function (position) {
-			var geocoder = new google.maps.Geocoder();
-			geocoder.geocode({
-					'location': new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
-				},
-				function (results, status) {
-					if (status === google.maps.GeocoderStatus.OK) {
-						document.getElementById('start').value = results[0].formatted_address;
-					} else {
-						window.alert('Unable to find your location');
-					}
-				});
-		},
-		function (positionError) {
-			console.log('Error: ' + positionError.message);
-		}, {
-			enableHighAccuracy: true,
-			timeout: 20 * 1000 // 20 seconds
-		});
+				var geocoder = new google.maps.Geocoder();
+				geocoder.geocode({
+						'location': new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+					},
+					function (results, status) {
+						if (status === google.maps.GeocoderStatus.OK) {
+							document.getElementById('start').value = results[0].formatted_address;
+						} else {
+							window.alert('Unable to find your location');
+						}
+					});
+			},
+			function (positionError) {
+				console.log('Error: ' + positionError.message);
+			}, {
+				enableHighAccuracy: true,
+				timeout: 20 * 1000 // 20 seconds
+			});
 	}
 
 	function findRoute() {
@@ -167,6 +183,7 @@ function createMap() {
 			}
 		}
 	}
+
 	function replaceDefaultMarkers(response) {
 		var _route = response.routes[0].legs[0];
 		var pinA = new google.maps.Marker({

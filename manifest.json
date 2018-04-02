@@ -1,0 +1,30 @@
+{
+	"lang": "en",
+	"dir": "ltr",
+	"short_name": "MeetPenguins",
+	"name": "Meet penguins at the London Zoo",
+	"description": "The app that helps you find directions to London Zoo",
+	"icons": [{
+			"src": "img/penguin-icon-1x.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "img/penguin-icon-2x.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "img/penguin-icon-4x.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "index.html",
+	"theme_color": "#4054e1",
+	"background_color": "#4054e1",
+	"serviceworker": {
+		"src": "service-worker.js",
+		"update_via_cache": "none"
+	}
+}

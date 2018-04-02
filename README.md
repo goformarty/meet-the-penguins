@@ -68,12 +68,18 @@ You can test a fully working live demo at https://goformarty.github.io/meet-the-
     I want to be able to specify my location
     so that I can use app when I don't have geolocation
 
+#### PWA
+    As a user
+    I want the app to be cached on my device
+    so that I can use it offline
+
+    As a user
+    I want to install app on y homescren
+    so that I can open it without finding the link in my browser
 ## What can be added/improved:
 
 - unit and browser tests;
-- register service worker and web app manifest;
-- app to respond with a 200 when offline;
-- option for choosing time and date for the journey;
+- option to choose time and date for the journey;
 - "get directions" button disabled until location entered;
 - clearer user journey - users may feel confused with 2 options to set their start location;
 

@@ -11,6 +11,8 @@ This interactive web application created with Google Maps API will find for you 
 ### Live demo
 You can test a fully working live demo at https://goformarty.github.io/meet-the-penguins/.
 
+It's a **Progressive Web App**, so Android users will be prompt to **add it to the homescreen**! Yay!
+
 ### Running locally
 To run this app locally **clone or download this repository**.
 
@@ -78,10 +80,16 @@ And open **index.html** file in your favourite browser.
     I want to be able to specify my location
     so that I can use app when I don't have geolocation
 
+#### PWA
+    As a user
+    I want to be prompt to add app to my homescreen
+    so that I can use it without going to the browser
+
+
 ## What could be improved/added:
 
 - unit and browser tests;
-- register service worker and web app manifest;
+- update service worker to cache files;
 - app to respond with a 200 when offline;
 - option to choose time and date for the journey;
 - "get directions" button disabled until location entered;
